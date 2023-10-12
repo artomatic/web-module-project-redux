@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import {legacy_createStore as createStore } from 'redux';
 import {configureStore} from "@reduxjs/toolkit"
 import { Provider } from 'react-redux';
 
@@ -10,7 +10,7 @@ import App from './components/App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 
-const store = configureStore(reducer)
+const store = createStore(reducer)
 
 ReactDOM.render(
   <Router>
