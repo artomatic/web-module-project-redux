@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
         case ADD_MOVIE: 
             return {
                 ...state,
-                movies: state.movies.map(item=>(action.payload === item.id))
+                movies: [...state.movies, action.payload]
             }
         default:
             return state;
