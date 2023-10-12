@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {legacy_createStore as createStore } from 'redux';
-import {configureStore} from "@reduxjs/toolkit"
 import { Provider } from 'react-redux';
 
 import reducer from './reducers';
